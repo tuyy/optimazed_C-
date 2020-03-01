@@ -20,7 +20,7 @@ SYS_INC_DIRS  := $(JSON_DIR)/include
 
 INC_DIR_OPTION := $(addprefix -I, $(INC_DIRS)) $(addprefix -isystem, $(SYS_INC_DIRS))
 
-CXXFLAGS := --std=c++17 -O0 -g -Wall -Werror -fpic -Wno-non-virtual-dtor $(INC_DIR_OPTION) -pthread
+CXXFLAGS := --std=c++17 -O0 -g -Werror -fpic -Wno-non-virtual-dtor $(INC_DIR_OPTION) -pthread
 
 DLIBS := stdc++ \
          dl \
